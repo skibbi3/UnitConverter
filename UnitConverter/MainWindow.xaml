@@ -1,0 +1,127 @@
+﻿<Window x:Class="UnitConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UnitConverter"
+        mc:Ignorable="d"
+        Title="Unit converter" Height="434" Width="587">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Length">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="17*"/>
+                        <ColumnDefinition Width="59*"/>
+                        <ColumnDefinition Width="8*"/>
+                        <ColumnDefinition Width="497*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="197*"/>
+                        <RowDefinition Height="193*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Margin="17,38,49,0" Text="To use the converter, select the unit of measure you want to convert from and to, enter a valid decimal number and press &quot;convert&quot;" TextWrapping="Wrap" Height="32" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.Column="1"/>
+                    <Label Content="From" Margin="17,79,0,0" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="37" Grid.Column="1"/>
+                    <Label Content="To" Margin="218,79,0,0" VerticalAlignment="Top" Grid.Column="3" HorizontalAlignment="Left" Width="22"/>
+                    <ListBox x:Name="FromLength" Margin="17,110,0,0" SelectedIndex="0" Height="170" VerticalAlignment="Top" Grid.RowSpan="2" HorizontalAlignment="Left" Width="230" Grid.ColumnSpan="3" Grid.Column="1">
+                        <ListBoxItem Content="Kilometres (km)"></ListBoxItem>
+                        <ListBoxItem Content="Metres (m)"></ListBoxItem>
+                        <ListBoxItem Content="Centimetres (cm)"></ListBoxItem>
+                        <ListBoxItem Content="Milimetres (mm)"></ListBoxItem>
+                        <ListBoxItem Content="Miles (mi)"></ListBoxItem>
+                        <ListBoxItem Content="Yards (yd)"></ListBoxItem>
+                        <ListBoxItem Content="Feet (ft)"></ListBoxItem>
+                        <ListBoxItem Content="Inches (in)"></ListBoxItem>
+                    </ListBox>
+                    <ListBox x:Name="ToLength" Margin="218,110,0,0" SelectedIndex="0" Height="170" VerticalAlignment="Top" HorizontalAlignment="Left" Width="230" Grid.RowSpan="2" Grid.Column="3">
+                        <ListBoxItem Content="Kilometres (km)"></ListBoxItem>
+                        <ListBoxItem Content="Metres (m)"></ListBoxItem>
+                        <ListBoxItem Content="Centimetres (cm)"></ListBoxItem>
+                        <ListBoxItem Content="Milimetres (mm)"></ListBoxItem>
+                        <ListBoxItem Content="Miles (mi)"></ListBoxItem>
+                        <ListBoxItem Content="Yards (yd)"></ListBoxItem>
+                        <ListBoxItem Content="Feet (ft)"></ListBoxItem>
+                        <ListBoxItem Content="Inches (in)"></ListBoxItem>
+                    </ListBox>
+                    <TextBox x:Name="lengthInput" Margin="17,108,0,0" Text="1" TextWrapping="Wrap" Grid.Row="1" Height="18" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.Column="1" HorizontalAlignment="Left" Width="179"/>
+                    <Button Content="Convert" Margin="134,108,0,0" Click="Length_Button_Click" Grid.Row="1" Height="20" VerticalAlignment="Top" Grid.Column="3" HorizontalAlignment="Left" Width="46"/>
+                    <TextBlock x:Name="lengthOutputTextBlock" HorizontalAlignment="Left" Margin="218,110,0,0" Text="Awaiting input" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.312,-2.123" Width="230" FontWeight="Bold" FontStyle="Normal" Grid.Row="1" Grid.Column="3"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Area">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="11*"/>
+                        <ColumnDefinition Width="12*"/>
+                        <ColumnDefinition Width="56*"/>
+                        <ColumnDefinition Width="502*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="11,38,0,0" Text="To use the converter, select the unit of measure you want to convert from and to, enter a valid decimal number and press &quot;convert&quot;" TextWrapping="Wrap" VerticalAlignment="Top" Width="498" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Label Content="From" Margin="11,79,0,0" VerticalAlignment="Top" Grid.Column="2" HorizontalAlignment="Left" Width="230" Grid.ColumnSpan="2"/>
+                    <Label Content="To" HorizontalAlignment="Left" Margin="223,79,0,0" VerticalAlignment="Top" Grid.Column="3"/>
+                    <ListBox x:Name="FromArea" Margin="11,110,0,0" SelectedIndex="0" Height="170" VerticalAlignment="Top" HorizontalAlignment="Left" Width="230" Grid.Column="2" Grid.ColumnSpan="2">
+                        <ListBoxItem Content="Sq Kilometres (km²)"></ListBoxItem>
+                        <ListBoxItem Content="Hectares (ha)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Metres (m²)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Centimetres (cm²)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Milimetres (mm²)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Miles (mi²)"></ListBoxItem>
+                        <ListBoxItem Content="Acre (ac)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Yards (yd²)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Feet (ft²)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Inches (in²)"></ListBoxItem>
+                    </ListBox>
+                    <ListBox x:Name="ToArea" Margin="223,110,0,0" SelectedIndex="0" Height="170" VerticalAlignment="Top" HorizontalAlignment="Left" Width="230" Grid.Column="3">
+                        <ListBoxItem Content="Sq Kilometres (km²)"></ListBoxItem>
+                        <ListBoxItem Content="Hectares (ha)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Metres (m²)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Centimetres (cm²)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Milimetres (mm²)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Miles (mi²)"></ListBoxItem>
+                        <ListBoxItem Content="Acre (ac)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Yards (yd²)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Feet (ft²)"></ListBoxItem>
+                        <ListBoxItem Content="Sq Inches (in²)"></ListBoxItem>
+                    </ListBox>
+                    <TextBox x:Name="areaInput" HorizontalAlignment="Left" Margin="11,305,0,0" Text="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Button Content="Convert" HorizontalAlignment="Left" Margin="139,305,0,0" VerticalAlignment="Top" Click="Area_Button_Click" Grid.Column="3"/>
+                    <TextBlock x:Name="areaOutputTextBlock" HorizontalAlignment="Left" Margin="223,307,0,0" Text="Awaiting input" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.312,-2.123" Width="230" FontWeight="Bold" FontStyle="Normal" Grid.Column="3"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Volume">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="11*"/>
+                        <ColumnDefinition Width="12*"/>
+                        <ColumnDefinition Width="56*"/>
+                        <ColumnDefinition Width="502*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="11,38,0,0" Text="To use the converter, select the unit of measure you want to convert from and to, enter a valid decimal number and press &quot;convert&quot;" TextWrapping="Wrap" VerticalAlignment="Top" Width="498" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Label Content="From" Margin="11,79,0,0" VerticalAlignment="Top" Grid.Column="2" HorizontalAlignment="Left" Width="230" Grid.ColumnSpan="2"/>
+                    <Label Content="To" HorizontalAlignment="Left" Margin="223,79,0,0" VerticalAlignment="Top" Grid.Column="3"/>
+                    <ListBox x:Name="FromVolume" Margin="11,110,0,0" SelectedIndex="0" Height="170" VerticalAlignment="Top" HorizontalAlignment="Left" Width="230" Grid.Column="2" Grid.ColumnSpan="2">
+                        <ListBoxItem Content="Cubic Metres (m³)"></ListBoxItem>
+                        <ListBoxItem Content="Litres (L)"></ListBoxItem>
+                        <ListBoxItem Content="Mililitres (mL)"></ListBoxItem>
+                        <ListBoxItem Content="Imperial Gallons (gal)"></ListBoxItem>
+                        <ListBoxItem Content="Imperial Pints (pt)"></ListBoxItem>
+                        <ListBoxItem Content="Cubic inches (in³)"></ListBoxItem>
+                    </ListBox>
+                    <ListBox x:Name="ToVolume" Margin="223,110,0,0" SelectedIndex="0" Height="170" VerticalAlignment="Top" HorizontalAlignment="Left" Width="230" Grid.Column="3">
+                        <ListBoxItem Content="Cubic Metres (m³)"></ListBoxItem>
+                        <ListBoxItem Content="Litres (L)"></ListBoxItem>
+                        <ListBoxItem Content="Mililitres (mL)"></ListBoxItem>
+                        <ListBoxItem Content="Imperial Gallons (gal)"></ListBoxItem>
+                        <ListBoxItem Content="Imperial Pints (pt)"></ListBoxItem>
+                        <ListBoxItem Content="Cubic inches (in³)"></ListBoxItem>
+                    </ListBox>
+                    <TextBox x:Name="volumeInput" HorizontalAlignment="Left" Margin="11,305,0,0" Text="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Button Content="Convert" HorizontalAlignment="Left" Margin="139,305,0,0" VerticalAlignment="Top" Click="Volume_Button_Click" Grid.Column="3"/>
+                    <TextBlock x:Name="volumeOutputTextBlock" HorizontalAlignment="Left" Margin="223,307,0,0" Text="Awaiting input" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.312,-2.123" Width="230" FontWeight="Bold" FontStyle="Normal" Grid.Column="3"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

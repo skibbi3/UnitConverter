@@ -1,0 +1,5 @@
+C:\Users\Skibbi\source\repos\UnitConverter\UnitConverter\bin\Release\netcoreapp3.1\publish\UnitConverter.exe
+C:\Users\Skibbi\source\repos\UnitConverter\UnitConverter\bin\Release\netcoreapp3.1\publish\UnitConverter.dll
+C:\Users\Skibbi\source\repos\UnitConverter\UnitConverter\bin\Release\netcoreapp3.1\publish\UnitConverter.deps.json
+C:\Users\Skibbi\source\repos\UnitConverter\UnitConverter\bin\Release\netcoreapp3.1\publish\UnitConverter.runtimeconfig.json
+C:\Users\Skibbi\source\repos\UnitConverter\UnitConverter\bin\Release\netcoreapp3.1\publish\UnitConverter.pdb

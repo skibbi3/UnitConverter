@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "lnXoLblVbWotCSGDH0XxvuHN+8kStC2lAzvSuINRdibAn5iHL5Env7ApxMR/RcfzwMsIqWUkLhd2YzaWFoIG7Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Skibbi\\source\\repos\\UnitConverter\\UnitConverter\\UnitConverter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Skibbi\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\3.1.22\\microsoft.netcore.app.runtime.win-x86.3.1.22.nupkg.sha512",
+    "C:\\Users\\Skibbi\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\3.1.22\\microsoft.windowsdesktop.app.runtime.win-x86.3.1.22.nupkg.sha512",
+    "C:\\Users\\Skibbi\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\3.1.22\\microsoft.aspnetcore.app.runtime.win-x86.3.1.22.nupkg.sha512"
+  ],
+  "logs": []
+}

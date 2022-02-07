@@ -1,0 +1,2 @@
+C:\Users\Skibbi\source\repos\UnitConverter\UnitConverter\bin\Release\netcoreapp3.1\publish\UnitConverter.pdb
+C:\Users\Skibbi\source\repos\UnitConverter\UnitConverter\bin\Release\netcoreapp3.1\publish\UnitConverter.exe
